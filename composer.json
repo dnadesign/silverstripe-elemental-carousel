@@ -1,0 +1,27 @@
+{
+    "name": "dnadesign/silverstripe-elemental-carousel",
+    "description": "Carousel element",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "elemental",
+        "carousel",
+        "slider"
+    ],
+    "require": {
+        "dnadesign/silverstripe-elemental": "^3",
+        "dnadesign/silverstripe-elemental-list": "^1.1.0",
+        "dnadesign/silverstripe-lazyloaded-image": "^0.2.0",
+        "dnadesign/silverstripe-youtube-embed": "dev-master",
+        "gorriecoe/silverstripe-link": "^1.2.4",
+        "silverstripe/vendor-plugin": "^1.0"
+    },
+    "extra": {
+        "installer-name": "silverstripe-elemental-carousel",
+        "expose": [
+            "client"
+        ]
+    },
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev"
+}
