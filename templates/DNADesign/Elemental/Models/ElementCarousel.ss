@@ -1,4 +1,4 @@
-<div data-element-carousel>
+<div class="element-carousel-container" data-element-carousel>
   <div class="element-carousel-frame">
     <ul class="element-carousel-slides">
       <% loop $Slides %>
