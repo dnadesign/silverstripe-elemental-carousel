@@ -1,4 +1,4 @@
-.element-carousel-container {
+.element-carousel__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,62 +10,42 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 850px;
   margin: 2rem auto;
 }
 
-.element-carousel-frame {
-  width: 800px;
-  height: 500px;
+.element-carousel__frame {
   position: relative;
   font-size: 0;
   line-height: 0;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
+  width: 800px;
 }
 
-.element-carousel-slides {
+.element-carousel__slides {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
 
-.element-carousel-slides > li {
+.element-carousel__slide {
   position: relative;
   display: inline-block;
-  width: 800px;
-  max-width: 100%;
-  height: 500px;
   margin: 0;
   padding: 0;
+  width: 800px;
+  max-width: 100%;
 }
 
-.element-carousel-prev, .element-carousel-next {
-  position: absolute;
-  display: block;
-  cursor: pointer;
-}
-
-.element-carousel-next {
-  right: 0;
-}
-
-.element-carousel-prev {
-  left: 0;
-}
-
-.element-carousel-next svg,
-.element-carousel-prev svg {
-  width: 25px;
-}
-
-.element-carousel-slide-container {
+.element-carousel__slide-container {
   position: relative;
   height: 100%;
 }
 
-.element-carousel-content {
+/* Title & captions */
+
+.element-carousel__content {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -75,43 +55,36 @@
   white-space: normal;
 }
 
-.element-carousel-title {
+.element-carousel__title {
   font-weight: bold;
 }
 
-.element-carousel-caption {
+.element-carousel__caption {
   max-width: 30em;
 }
 
-.element-carousel-img-container {
+/* Media */
+
+.element-carousel__image-container,
+.youtube-embed__container {
   position: relative;
+  width: 100%;
   height: 100%;
 }
 
-.element-carousel-img-container:after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 100%;
-  padding-bottom: calc(5 / 8 * 100%);
-}
-
-.element-carousel-img-container > img {
+.element-carousel__image-container > img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   display: block;
 }
 
-.element-carousel .youtube-embed__container {
-  padding-top: calc(5 / 8 * 100%);
-}
+/* Dots */
 
-.element-carousel-dots {}
+.element-carousel__dots {}
 
-.element-carousel-dots li {
+.element-carousel__dots li {
   display: inline-block;
   cursor: pointer;
   margin: 0 5px;
@@ -123,8 +96,28 @@
   cursor: pointer;
 }
 
-.element-carousel-dots li.active {
+.element-carousel__dots li.active {
   background-color: black;
 }
 
+/* Arrows */
 
+.element-carousel__prev,
+.element-carousel__next {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+}
+
+.element-carousel__next {
+  right: 0;
+}
+
+.element-carousel__prev {
+  left: 0;
+}
+
+.element-carousel__next svg,
+.element-carousel__prev svg {
+  width: 25px;
+}

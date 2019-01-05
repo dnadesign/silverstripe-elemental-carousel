@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var options = {
       infinite: 1,
       enableMouseEvents: true,
-      classNameFrame: "element-carousel-frame",
-      classNameSlideContainer: "element-carousel-slides",
-      classNamePrevCtrl: "element-carousel-prev",
-      classNameNextCtrl: "element-carousel-next"
+      classNameFrame: "element-carousel__frame",
+      classNameSlideContainer: "element-carousel__slides",
+      classNamePrevCtrl: "element-carousel__prev",
+      classNameNextCtrl: "element-carousel__next"
     }
 
-    var dots = element.querySelector(".element-carousel-dots");
+    var dots = element.querySelector(".element-carousel__dots");
 
     function stopCurrentVideo(e) {
       if (e.type === "before.lory.slide") {
-        var current = element.querySelector(".element-carousel-slide.active");
+        var current = element.querySelector(".element-carousel__slide.active");
         var container = current.querySelector(".youtube-embed__container");
         var iframe = current.querySelector("iframe");
 

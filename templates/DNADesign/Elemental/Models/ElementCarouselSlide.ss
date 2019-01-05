@@ -1,9 +1,9 @@
-<li class="element-carousel-slide">
+<li class="element-carousel__slide">
   <% if $Link %>
     <a href="{$Link.LinkURL}"{$Link.TargetAttr}>
   <% end_if %>
 
-  <div class="element-carousel-slide-container">
+  <div class="element-carousel__slide-container">
     <% if $Image %>
       <% include DNADesign\Elemental\Models\ElementCarouselImage %>
     <% end_if %>

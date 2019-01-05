@@ -1,3 +1,3 @@
-<div class="element-carousel-img-container">
+<div class="element-carousel__image-container">
   {$Image.Lazyloaded}
 </div>
