@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (dots) {
       function handleDotEvent(e) {
         if (e.type === "after.lory.init") {
-          dots.querySelectorAll("li").forEach(function(li) {
+          Array.prototype.slice.call(dots.querySelectorAll("li")).forEach(function(li) {
             li.addEventListener("click", function(e) {
               carousel.slideTo(Array.prototype.indexOf.call(dots.querySelectorAll("li"), e.target));
             });
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (e.type === "after.lory.slide") {
-          dots.querySelectorAll("li").forEach(function(li) { li.classList.remove("active") });
+          Array.prototype.slice.call(dots.querySelectorAll("li")).querySelectorAll("li").forEach(function(li) { li.classList.remove("active") });
           dots.querySelectorAll("li")[e.detail.currentSlide - 1].classList.add("active");
         }
       }
