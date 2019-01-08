@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (e.type === "after.lory.slide") {
-          Array.prototype.slice.call(dots.querySelectorAll("li")).querySelectorAll("li").forEach(function(li) { li.classList.remove("active") });
+          Array.prototype.slice.call(dots.querySelectorAll("li")).forEach(function(li) { li.classList.remove("active") });
           dots.querySelectorAll("li")[e.detail.currentSlide - 1].classList.add("active");
         }
       }
