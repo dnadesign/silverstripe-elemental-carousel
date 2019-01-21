@@ -16,7 +16,7 @@ class ElementCarousel extends ElementList
 
   private static $plural_name = 'carousels';
 
-  private static $icon = 'font-icon-block-list';
+  private static $icon = 'font-icon-block-carousel';
 
   private static $controller_class = ElementCarouselController::class;
 
