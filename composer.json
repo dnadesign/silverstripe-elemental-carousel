@@ -10,7 +10,6 @@
     ],
     "require": {
         "dnadesign/silverstripe-elemental": "^3",
-        "dnadesign/silverstripe-elemental-list": "^1.1.0",
         "dnadesign/silverstripe-lazyloaded-image": "^0.2.0",
         "dnadesign/silverstripe-youtube-embed": "dev-master",
         "gorriecoe/silverstripe-link": "^1.2.4",

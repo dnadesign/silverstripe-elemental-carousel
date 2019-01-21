@@ -2,11 +2,11 @@
 
 namespace DNADesign\Elemental\Models;
 
-use DNADesign\ElementalList\Model\ElementList;
+use DNADesign\Elemental\Models\BaseElement;
 use DNADesign\Elemental\DataObjects\CarouselSlide;
 use DNADesign\Elemental\Controllers\ElementCarouselController;
 
-class ElementCarousel extends ElementList
+class ElementCarousel extends BaseElement
 {
   private static $table_name = 'ElementCarousel';
 
