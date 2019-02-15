@@ -1,3 +1,9 @@
+<% if $Title && $ShowTitle %>
+  <div class="element-carousel__header">
+    <h2 class="element-carousel__title">{$Title}</h2>
+  </div>
+<% end_if %>
+
 <div class="element-carousel__container" data-element-carousel>
   <div class="element-carousel__frame">
     <ul class="element-carousel__slides">
