@@ -20,6 +20,8 @@ class ElementCarousel extends BaseElement
 
   private static $controller_class = ElementCarouselController::class;
 
+  private static $inline_editable = false;
+
   private static $db = [
   ];
 
