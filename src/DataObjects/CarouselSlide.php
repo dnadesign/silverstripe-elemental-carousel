@@ -39,7 +39,7 @@ class CarouselSlide extends DataObject
     'Video' => YoutubeEmbed::class,
     'Link' => Link::class
   ];
-  
+
   private static $owns = [
     'Image',
   ];

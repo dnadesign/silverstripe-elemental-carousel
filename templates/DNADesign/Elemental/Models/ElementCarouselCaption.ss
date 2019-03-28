@@ -1,9 +1,9 @@
 <% if $Title && $ShowTitle || $Caption %>
   <div class="element-carousel__content">
     <% if $ShowTitle %>
-      <p class="element-carousel__title">{$Title}</p>
+      <h3 class="element-carousel__title">{$Title}</h3>
     <% end_if %>
 
-    <div class="element-carousel__caption">{$Caption}</div>
+    <div class="element-carousel__caption"><p>{$Caption}</p></div>
   </div>
 <% end_if %>

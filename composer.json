@@ -14,7 +14,7 @@
         "dnadesign/silverstripe-youtube-embed": "^0.2.0",
         "gorriecoe/silverstripe-link": "^1.2.4",
         "silverstripe/vendor-plugin": "^1.0",
-        "silvershop/silverstripe-hasonefield" : "^2.1"
+        "silvershop/silverstripe-hasonefield" : "^3.0.x"
     },
     "extra": {
         "installer-name": "silverstripe-elemental-carousel",

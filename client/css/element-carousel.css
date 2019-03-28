@@ -1,13 +1,5 @@
 .element-carousel__header {
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-}
-
-.element-carousel__title {
-  font-size: 2.25rem;
-  line-height: 1.25;
-  margin: 0 0 2rem;
 }
 
 .element-carousel__container {
@@ -22,7 +14,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  margin: 2rem auto;
 }
 
 .element-carousel__frame {
@@ -32,13 +23,14 @@
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
-  width: 800px;
+  width: 100%;
 }
 
 .element-carousel__slides {
   display: inline-block;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .element-carousel__slide {
@@ -46,8 +38,7 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  width: 800px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .element-carousel__slide-container {
@@ -65,36 +56,56 @@
   padding: 1rem 2rem;
   background-color: rgba(0,0,0,0.35);
   white-space: normal;
+  color: white;
 }
 
-.element-carousel__title {
-  font-weight: bold;
+.element-carousel__content .element-carousel__title {
+  color: white;
 }
 
 .element-carousel__caption {
-  max-width: 30em;
 }
 
 /* Media */
-
 .element-carousel__image-container,
 .youtube-embed__container {
   position: relative;
   width: 100%;
   height: 100%;
+  min-height: 350px;
 }
 
 .element-carousel__image-container > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  margin: auto;
   display: block;
 }
 
-/* Dots */
+.element-carousel__image-container--stretch > img {
+  width: 100%;
+  height: auto;
+}
 
-.element-carousel__dots {}
+.element-carousel__image-container--fit > img {
+  width: auto;
+ height: 350px;
+}
+
+.element-carousel__image-container--cover > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Dots */
+.element-carousel__dots {
+  padding: 10px 0 0 0;
+  text-align: center;
+}
 
 .element-carousel__dots li {
   display: inline-block;
