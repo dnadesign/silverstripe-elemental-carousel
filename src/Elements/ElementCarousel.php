@@ -23,6 +23,7 @@ class ElementCarousel extends BaseElement
   private static $inline_editable = false;
 
   private static $db = [
+    'ImageSize' => "Enum('Native, Stretch, Fit, Cover')"
   ];
 
   private static $has_many = [

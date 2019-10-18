@@ -8,7 +8,7 @@
   <div class="element-carousel__frame">
     <ul class="element-carousel__slides">
       <% loop $Slides %>
-        <% include DNADesign\Elemental\Models\ElementCarouselSlide %>
+        <% include DNADesign\Elemental\Models\ElementCarouselSlide ImageSize=$Up.ImageSize %>
       <% end_loop %>
     </ul>
   </div>
