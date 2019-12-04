@@ -39,7 +39,7 @@ class CarouselSlide extends DataObject
     'Video' => YoutubeEmbed::class,
     'Link' => Link::class
   ];
-  
+
   private static $owns = [
     'Image',
   ];
@@ -60,11 +60,7 @@ class CarouselSlide extends DataObject
 
     $fields->replaceField(
       'Title',
-      TextCheckboxGroupField::create(
-        TextField::create('Title', 'Title (displayed if checked)'),
-        CheckboxField::create('ShowTitle', 'Displayed')
-      )
-      ->setName('TitleAndDisplayed')
+      TextCheckboxGroupField::create()->setName('TitleAndDisplayed')
     );
 
     return $fields;
