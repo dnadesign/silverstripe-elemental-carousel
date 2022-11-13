@@ -10,10 +10,10 @@
     ],
     "require": {
         "dnadesign/silverstripe-elemental": "^4.3",
-        "dnadesign/silverstripe-lazyloaded-image": "^0.5.0",
-        "dnadesign/silverstripe-youtube-embed": "^0.4.0",
-        "gorriecoe/silverstripe-link": "^1.2.4",
-        "silverstripe/vendor-plugin": "^1.0",
+        "dnadesign/silverstripe-lazyloaded-image": "^0.5",
+        "dnadesign/silverstripe-youtube-embed": "^0.7",
+        "gorriecoe/silverstripe-link": "^1.2",
+        "silverstripe/vendor-plugin": "^1.5",
         "silvershop/silverstripe-hasonefield": "^3"
     },
     "extra": {
@@ -23,5 +23,6 @@
         ]
     },
     "license": "BSD-3-Clause",
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
