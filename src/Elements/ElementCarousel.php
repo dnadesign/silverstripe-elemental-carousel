@@ -26,11 +26,11 @@ class ElementCarousel extends BaseElement
 
   private static $db = [
     'EnableScroll' => 'Boolean',
-    'SlideInterval' => 'Int'
+    'ScrollInterval' => 'Int'
   ];
 
   private static $defaults = [
-    'SlideInterval' => '8',
+    'ScrollInterval' => '8',
   ];
 
   private static $has_many = [
@@ -56,9 +56,9 @@ class ElementCarousel extends BaseElement
     $fields = parent::getCMSFields();
 
     $fields->addFieldsToTab('Root.Main', [
-      CheckboxField::create('EnableScroll'),
+      CheckboxField::create('EnableScroll', 'Enable auto-scrolling'),
       NumericField::create(
-        'SlideInterval'
+        'ScrollInterval', 'Scroll interval'
       )->setDescription('In seconds')
     ]);
 
