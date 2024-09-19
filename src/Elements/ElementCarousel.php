@@ -2,9 +2,11 @@
 
 namespace DNADesign\Elemental\Models;
 
-use DNADesign\Elemental\Models\BaseElement;
-use DNADesign\Elemental\DataObjects\CarouselSlide;
 use DNADesign\Elemental\Controllers\ElementCarouselController;
+use DNADesign\Elemental\DataObjects\CarouselSlide;
+use DNADesign\Elemental\Models\BaseElement;
+use SilverStripe\Forms\CheckboxField;
+use SilverStripe\Forms\NumericField;
 
 class ElementCarousel extends BaseElement
 {
@@ -23,6 +25,12 @@ class ElementCarousel extends BaseElement
   private static $inline_editable = false;
 
   private static $db = [
+    'EnableScroll' => 'Boolean',
+    'SlideInterval' => 'Int'
+  ];
+
+  private static $defaults = [
+    'SlideInterval' => '8',
   ];
 
   private static $has_many = [
@@ -42,6 +50,20 @@ class ElementCarousel extends BaseElement
    * @var bool
    */
   private static $enable_dot_navigation = true;
+
+  public function getCMSFields()
+  {
+    $fields = parent::getCMSFields();
+
+    $fields->addFieldsToTab('Root.Main', [
+      CheckboxField::create('EnableScroll'),
+      NumericField::create(
+        'SlideInterval'
+      )->setDescription('In seconds')
+    ]);
+
+    return $fields;
+  }
 
   public function getType()
   {
