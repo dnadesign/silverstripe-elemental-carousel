@@ -23,5 +23,10 @@
         ]
     },
     "license": "BSD-3-Clause",
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "DNADesign\\Elemental\\": "src" 
+        }
+    }
 }
