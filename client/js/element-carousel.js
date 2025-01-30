@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     Array.prototype.indexOf.call(
                       dots.querySelectorAll("li"),
                       e.target
-                    ) + 1 // +1 because slideTo() is 1-indexed
+                    )
                   );
                 });
               });
