@@ -9,12 +9,11 @@
         "slider"
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "^5",
+        "dnadesign/silverstripe-elemental": "^6",
         "dnadesign/silverstripe-lazyloaded-image": "^1",
         "dnadesign/silverstripe-youtube-embed": "^1",
-        "gorriecoe/silverstripe-link": "^1.5",
-        "silverstripe/vendor-plugin": "^2.0",
-        "silvershop/silverstripe-hasonefield": "^4"
+        "silverstripe/linkfield": "^5",
+        "silvershop/silverstripe-hasonefield": "dev-main"
     },
     "extra": {
         "installer-name": "silverstripe-elemental-carousel",
@@ -26,7 +25,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "DNADesign\\Elemental\\": "src" 
+            "DNADesign\\Elemental\\": "src"
         }
     }
 }

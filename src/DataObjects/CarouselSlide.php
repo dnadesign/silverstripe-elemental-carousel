@@ -11,7 +11,8 @@ use SilverStripe\Assets\Image;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\TextField;
 use SilverShop\HasOneField\HasOneButtonField;
-use gorriecoe\Link\Models\Link;
+use SilverStripe\LinkField\Form\LinkField;
+use SilverStripe\LinkField\Models\Link;
 
 class CarouselSlide extends DataObject
 {
@@ -41,7 +42,16 @@ class CarouselSlide extends DataObject
   ];
 
   private static $owns = [
+    'Link',
     'Image',
+  ];
+
+  private static array $cascade_deletes = [
+    'Link',
+  ];
+
+  private static array $cascade_duplicates = [
+    'Link',
   ];
 
   public function getCMSFields()
@@ -55,7 +65,7 @@ class CarouselSlide extends DataObject
 
     $fields->addFieldsToTab('Root.Main', [
       HasOneButtonField::create($this, 'Video'),
-      HasOneButtonField::create($this, 'Link'),
+      LinkField::create('Link'),
     ]);
 
     $fields->replaceField(
