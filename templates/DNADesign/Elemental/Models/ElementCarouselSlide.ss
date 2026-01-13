@@ -1,6 +1,6 @@
 <li class="element-carousel__slide">
   <% if $Link %>
-    <a href="{$Link.LinkURL}"{$Link.TargetAttr}>
+    <a href="{$Link.URL}"{$Link.TargetAttr}>
   <% end_if %>
 
   <div class="element-carousel__slide-container">
